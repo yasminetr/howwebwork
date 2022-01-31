@@ -1,10 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>internet</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="navbarcontainer">
+      <div class="navbar">
+        <a href="#intro">introduction</a>
+        <a href="#work">How does the Internet work</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Technical Words
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#internetp">Internet Protocols</a>
+            <a href="#ip">IP Addresses</a>
+            <a href="#dns">DNS</a>
+            <a href="#tcp">Packets (TCP/UDP)</a>
+            <a href="#http">HTTP</a>
+            <a href="#html">HTML</a>
+          </div>
+        </div>
+        <a href="#routers">Routers</a>
+      </div>
+    </div>
+    <div class="main">
+      <h1>What is internet</h1>
+      <div id="intro">
+        <br />
+        <br />
+      </div>
+      <h2>Introduction to Internet</h2>
+      <p>
+        The Internet is a worldwide organization of billions of PCs and other electronic gadgets. With the Internet, it's possible
+        to get to practically any data, speak with any other person on the planet, and do significantly more.<br />
+        You can do all of this by associating a PC to the Internet, which is likewise called going on the web. At point when
+        somebody says a PC is on the web, it's simply one more approach to saying it's associated with the Internet.
+      </p>
+      <img src="../assets/connection.png" alt="" id="intro-img" />
+
+      <div id="work">
+        <br />
+        <br />
+      </div>
+      <h2>How does internet work</h2>
+      <p>watch this video to understand how does the internet works</p>
+      <iframe
+        id="frame"
+        width="393"
+        height="221"
+        src="https://www.youtube.com/embed/Dxcc6ycZ73M"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>
+        Be it for a Google search for your favorite movie, or an email to a friend, what's essentially happening when you use the
+        internet is that you're sending a message from your device to another device. Thus, when you use the internet, what you're
+        doing is sending and receiving messages (requests) to and from other computers and devices on the network.
+      </p>
+      <h3>Data Transmission on the Internet</h3>
+      <img src="../assets/internet.gif" alt="../assets/internet.gif" />
+      <p>
+        The computers and devices that we use are called clients and the computers that websites such as Google or Facebook use
+        are called servers. The websites we access are all files on the hard disks of the respective servers. Our devices do not
+        directly access these files. When we access google.com for example, our client device forwards its requests to Google
+        servers via our internet service providers (ISPs). The results also come to us via our ISPs. Which is why we cannot access
+        the internet if our connection to our ISPs gets terminated.<br />
+        Also, these messages and requests aren't sent or received as a whole. Any time you use the internet, your message is
+        broken down into units called <b>packets</b> that travel through the network to its destination. Upon arrival at the
+        destination, the packets are put together in the original order. You can think of a packet as a chunk of your message
+        query. Or like a part of a jigsaw puzzle that needs to be solved at the destination. If for some reason the packets aren't
+        put together in the right order at the right time, the results are in the form of distorted content. Like when a video
+        lags, or a web page doesn't load properly.But there are millions of people and devices accessing the internet at any given
+        time. Which means countless packets of data. So how do these packets of data find their way to their intended destination?
+        Every device connected to the internet has its own unique I.P address which acts as the postal address does in the
+        physical world. And to make the data flow smoother and avoid data traffic jams, there are routers. Routers sort the
+        packets based on their destination and ensure that they end up on the right device and not on other devices on the
+        network.
+      </p>
+      <div id="internetp"><br /><br /></div>
+      <h3>Internet protocol</h3>
+
+      <p>
+        The IP protocol (an acronym for Internet Protocol) is one of the key protocols of the Internet along with the transport
+        protocols TCP and UDP. IP works on several types of networks such as Ethernet for local networks, but can also be
+        encapsulated on other protocols such as ATM, even if more and more IP is establishing itself as the universal protocol.
+        <br />
+        It provides data routing information on the network, and describes a method of fragmenting the information to be
+        transported, in the form of datagrams. For example, a message of a length of one million bytes transported over an IP
+        network will be cut into a multitude of datagrams (or IP packets) - these packets include multiple header fields, the
+        source IP address and the recipient's IP address, followed by the data itself - by its sender, then sent to its recipient
+        who will be responsible for reassembling the packets to reconstruct the source message.
+      </p>
+      <div id="ip"><br /><br /></div>
+      <h3>IP Adresses</h3>
+      <p>
+        The Internet Protocol Address, abbreviated as "IP address" or simply "IP", is based on the Internet Protocol which also
+        forms the basis of the Internet network. This is the clearly identifiable address of a device (e.g. computer, web server,
+        printer) within an internal or external network. An IP address can also refer to a set of devices, especially in the case
+        of broadcast or multicast broadcasting. Similarly, several addresses can be assigned to the same computer. In any case,
+        one thing is immutable: each IP address can only be assigned once at the same time within a network.
+      </p>
+      <h4>How is an IP address structured?</h4>
+      <p>
+        There are two versions of IP addresses with very different structures. They have in common the fact of being composed of a
+        network part (for routing in the case of IP routing) and a host part (for allocation to a particular computer).
+      </p>
+      <div id="dns"><br /><br /></div>
+      <h3>DNS</h3>
+      <p>
+        The DNS (Domain Name System) server is a service whose main function is to translate a domain name into an IP address. To
+        simplify, the DNS server acts as a directory that a computer consults when accessing another computer via a network. In
+        other words, the DNS server is this service which makes it possible to associate an IP address with a website (or a
+        connected computer or a server), like a telephone directory makes it possible to associate a telephone number with a
+        subscriber name.
+      </p>
+
+      <div id="tcp"><br /><br /></div>
+      <h3>Paquets (TCP and UDP)</h3>
+
+      <ul>
+        <li>TCP</li>
+        <p>
+          TCP stands for Transmission Control Protocol a communications standard that enables application programs and computing
+          devices to exchange messages over a network. It is designed to send packets across the internet and ensure the
+          successful delivery of data and messages over networks. TCP is one of the basic standards that define the rules of the
+          internet and is included within the standards defined by the Internet Engineering Task Force (IETF). It is one of the
+          most commonly used protocols within digital network communications and ensures end-to-end data delivery.
+        </p>
+        <li>UDP</li>
+        <p>
+          The User Datagram Protocol, or UDP, is a communication protocol used across the Internet for especially time-sensitive
+          transmissions such as video playback or DNS lookups. It speeds up communications by not formally establishing a
+          connection before data is transferred. This allows data to be transferred very quickly, but it can also cause packets to
+          become lost in transit — and create opportunities for exploitation in the form of DDoS attacks.
+        </p>
+      </ul>
+
+      <div id="http"><br /><br /></div>
+      <h3>HTTP</h3>
+      <p>
+        Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.
+        It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP
+        follows a classical client-server model, with a client opening a connection to make a request, then waiting until it
+        receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two
+        requests.
+      </p>
+
+      <div id="html"><br /><br /></div>
+      <h3>HTML</h3>
+      <p>
+        HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web
+        content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or
+        functionality/behavior (JavaScript).
+      </p>
+
+      <div id="routers"><br /><br /></div>
+      <h3>Routers</h3>
+      <p>
+        A router is a device that connects two or more packet-switched networks or subnetworks. It serves two primary functions:
+        managing traffic between these networks by forwarding data packets to their intended IP addresses, and allowing multiple
+        devices to use the same Internet connection. There are several types of routers, but most routers pass data between LANs
+        (local area networks) and WANs (wide area networks). A LAN is a group of connected devices restricted to a specific
+        geographic area. A LAN usually requires a single router.
+      </p>
+      <img src="assets/router4.png" alt="" />
+    </div>
+  </body>
 </html>
